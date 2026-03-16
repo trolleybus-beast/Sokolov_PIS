@@ -1,0 +1,195 @@
+/* Общие стили страницы*/
+body {
+    background: #1abc9c;
+    font-family: Tahoma, Arial, sans-serif;
+    color: #ffffff;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Контейнеры контента*/
+.archive, .article-detail-container {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Шапка (Логотип и ссылка) */
+.header {
+    width: 100%;
+    margin-bottom: 40px;
+    overflow: hidden;
+}
+
+/* Логотип */
+.header img {
+    display: block;
+    width: 318px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Страница статьи */
+.article-page .header img {
+    float: left;
+    margin-left: 0;
+    width: 318px;
+}
+
+.header-link {
+    float: right;
+    margin-top: 70px;
+}
+
+.header-link a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    border-bottom: 2px solid white;
+}
+
+
+/* Заголовки статей */
+.post-title, .article-title {
+    border-bottom: 3px solid white;
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.post-title a, .article-title {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* Автор и дата*/
+.article-info {
+    width: 100%;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.article-author {
+    width: 50%;
+    float: left;
+    font-weight: bold;
+}
+
+.article-created-date {
+    width: 50%;
+    float: right;
+    text-align: right;
+    font-style: italic;
+}
+
+/* Текст статьи */
+.article-text {
+    clear: both;
+    line-height: 1.6;
+    text-align: justify;
+    padding-top: 10px;
+}
+
+/* Создание статьи */
+.create-post .content {
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Поля формы */
+.create-post input[type="text"],
+.create-post textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    border: none;
+    font-family: Tahoma, Arial, sans-serif;
+    font-size: 16px;
+}
+
+/* Высота текстового поля */
+.create-post textarea {
+    height: 200px;
+}
+
+/* Кнопка */
+.create-post input[type="submit"] {
+    background: #16a085;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.create-post input[type="submit"]:hover {
+    background: #148f77;
+}
+
+/* Ошибки формы */
+.create-post .errors {
+    margin-top: 10px;
+    color: yellow;
+}
+
+/* Регистрация и авторизация */
+.register .content,
+.login .content {
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.register input,
+.login input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+}
+
+.errors {
+    color: yellow;
+}
+
+.form-container {
+    width: 400px;
+    margin: 0 auto;
+}
+
+.form-container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+.one-post {
+    position: relative;
+}
+
+.fold-button {
+    float: right;
+    margin-top: 20px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    border-bottom: 2px solid white;
+}
+
+.one-post.folded .article-author {
+    display: none;
+}
+
+.one-post.folded .article-created-date {
+    display: none;
+}
+
+.one-post.folded .article-text {
+    display: none;
+}
